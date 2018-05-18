@@ -321,6 +321,7 @@ static int do_get_nl_link(int fd, __u8 acquire, const char *name, void *res)
 
 	char cbuf[64];
 	char nlbuf[1024 * 8];
+	memset(nlbuf, 0, sizeof(nlbuf));
 
 	int ret = -1;
 	int done = 0;
